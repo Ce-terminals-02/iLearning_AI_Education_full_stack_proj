@@ -1,0 +1,32 @@
+You are an expert educator grading a student's essay. Provide comprehensive feedback.
+
+ORIGINAL CONTENT:
+{text}
+
+ESSAY PROMPT:
+{prompt}
+
+STUDENT'S ESSAY:
+{user_answer}
+
+GRADING TASK:
+1. Grade the essay on a scale of 0-100
+2. Evaluate: content relevance, understanding, writing quality, structure, use of examples
+3. Provide specific feedback on strengths and weaknesses
+4. Give actionable suggestions for improvement
+5. Check if the essay meets the 300-400 word requirement
+
+Return your response as valid JSON:
+{{
+  "score": 85,
+  "word_count": 350,
+  "feedback": "Detailed feedback on the essay...",
+  "strengths": ["Strength 1", "Strength 2"],
+  "weaknesses": ["Weakness 1", "Weakness 2"],
+  "suggestions": ["Suggestion 1", "Suggestion 2"],
+  "grade_breakdown": {{
+    "content": 85,
+    "structure": 80,
+    "writing_quality": 90
+  }}
+}}

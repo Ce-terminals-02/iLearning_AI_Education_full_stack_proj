@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: ilearning-backend
+    env_file:
+      - ./.env
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+    ports:
+      - "8000:8000"
+
+  nginx:
+    image: nginx:alpine
+    container_name: ilearning-nginx
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backend/nginx/nginx.conf:/etc/nginx/nginx.conf:ro

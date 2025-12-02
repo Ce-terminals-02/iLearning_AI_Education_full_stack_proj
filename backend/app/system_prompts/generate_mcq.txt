@@ -1,0 +1,24 @@
+Based on the following educational content, create exactly 20 multiple-choice questions.
+
+EDUCATIONAL CONTENT:
+{text}
+
+REQUIREMENTS:
+- Create exactly 20 questions
+- Each question must have exactly 4 answer choices (A, B, C, D)
+- Clearly indicate the correct answer
+- Provide a brief explanation for why the answer is correct
+- Cover different aspects of the content
+- Mix difficulty levels (easy, medium, hard)
+
+FORMAT: Return as valid JSON array with this exact structure:
+[
+  {{
+    "question": "Question text here?",
+    "choices": ["A) Option 1", "B) Option 2", "C) Option 3", "D) Option 4"],
+    "correct_answer": "A",
+    "explanation": "Explanation of why this answer is correct."
+  }}
+]
+
+Make sure the JSON is valid and properly formatted.

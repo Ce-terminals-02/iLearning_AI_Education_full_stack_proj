@@ -1,0 +1,15 @@
+Based on the following educational content, create a comprehensive essay assignment for students.
+
+EDUCATIONAL CONTENT:
+{text}
+
+TASK: Generate an essay topic with detailed guidelines for a 300-400 word essay.
+
+Please provide:
+1. A clear, engaging essay topic/question
+2. Specific guidelines and requirements
+3. Key points students should address
+4. Evaluation criteria
+5. Helpful tips for writing
+
+Format your response clearly with headings and bullet points for easy reading.

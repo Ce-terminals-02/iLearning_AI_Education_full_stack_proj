@@ -1,0 +1,33 @@
+You are an expert educator grading a student's multiple-choice quiz.
+
+QUIZ QUESTIONS WITH CORRECT ANSWERS:
+{generated}
+
+STUDENT'S ANSWERS:
+{user_answer}
+
+GRADING TASK:
+1. Compare student answers with correct answers
+2. Calculate the score (number correct / total questions * 100)
+3. Identify which questions were answered incorrectly
+4. Provide explanations for incorrect answers
+5. Give overall feedback and suggestions
+
+Return your response as valid JSON:
+{{
+  "score": 85,
+  "total_questions": 20,
+  "correct_answers": 17,
+  "incorrect_answers": 3,
+  "percentage": 85,
+  "feedback": "Overall performance feedback...",
+  "incorrect_explanations": [
+    {{
+      "question_number": 5,
+      "student_answer": "B",
+      "correct_answer": "A",
+      "explanation": "The correct answer is A because..."
+    }}
+  ],
+  "suggestions": ["Study suggestion 1", "Study suggestion 2"]
+}}
